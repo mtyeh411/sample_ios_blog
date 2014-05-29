@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86EDAA211937A4E4000FE03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA201937A4E4000FE03B /* Foundation.framework */; };
+		86EDAA231937A4E4000FE03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA221937A4E4000FE03B /* CoreGraphics.framework */; };
+		86EDAA251937A4E4000FE03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA241937A4E4000FE03B /* UIKit.framework */; };
+		86EDAA271937A4E4000FE03B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA261937A4E4000FE03B /* CoreData.framework */; };
+		86EDAA2D1937A4E4000FE03B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86EDAA2B1937A4E4000FE03B /* InfoPlist.strings */; };
+		86EDAA2F1937A4E4000FE03B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA2E1937A4E4000FE03B /* main.m */; };
+		86EDAA331937A4E4000FE03B /* WWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA321937A4E4000FE03B /* WWAppDelegate.m */; };
+		86EDAA361937A4E4000FE03B /* LG4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA341937A4E4000FE03B /* LG4.xcdatamodeld */; };
+		86EDAA381937A4E4000FE03B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EDAA371937A4E4000FE03B /* Images.xcassets */; };
+		86EDAA3F1937A4E4000FE03B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA3E1937A4E4000FE03B /* XCTest.framework */; };
+		86EDAA401937A4E4000FE03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA201937A4E4000FE03B /* Foundation.framework */; };
+		86EDAA411937A4E4000FE03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA241937A4E4000FE03B /* UIKit.framework */; };
+		86EDAA421937A4E4000FE03B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA261937A4E4000FE03B /* CoreData.framework */; };
+		86EDAA4A1937A4E4000FE03B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86EDAA481937A4E4000FE03B /* InfoPlist.strings */; };
+		86EDAA4C1937A4E4000FE03B /* LG4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA4B1937A4E4000FE03B /* LG4Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86EDAA431937A4E4000FE03B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86EDAA151937A4E4000FE03B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86EDAA1C1937A4E4000FE03B;
+			remoteInfo = LG4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86EDAA1D1937A4E4000FE03B /* LG4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LG4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EDAA201937A4E4000FE03B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86EDAA221937A4E4000FE03B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86EDAA241937A4E4000FE03B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86EDAA261937A4E4000FE03B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		86EDAA2A1937A4E4000FE03B /* LG4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LG4-Info.plist"; sourceTree = "<group>"; };
+		86EDAA2C1937A4E4000FE03B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86EDAA2E1937A4E4000FE03B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86EDAA301937A4E4000FE03B /* LG4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LG4-Prefix.pch"; sourceTree = "<group>"; };
+		86EDAA311937A4E4000FE03B /* WWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
+		86EDAA321937A4E4000FE03B /* WWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWAppDelegate.m; sourceTree = "<group>"; };
+		86EDAA351937A4E4000FE03B /* LG4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LG4.xcdatamodel; sourceTree = "<group>"; };
+		86EDAA371937A4E4000FE03B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86EDAA3D1937A4E4000FE03B /* LG4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LG4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EDAA3E1937A4E4000FE03B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		86EDAA471937A4E4000FE03B /* LG4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LG4Tests-Info.plist"; sourceTree = "<group>"; };
+		86EDAA491937A4E4000FE03B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86EDAA4B1937A4E4000FE03B /* LG4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LG4Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86EDAA1A1937A4E4000FE03B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDAA231937A4E4000FE03B /* CoreGraphics.framework in Frameworks */,
+				86EDAA271937A4E4000FE03B /* CoreData.framework in Frameworks */,
+				86EDAA251937A4E4000FE03B /* UIKit.framework in Frameworks */,
+				86EDAA211937A4E4000FE03B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86EDAA3A1937A4E4000FE03B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDAA3F1937A4E4000FE03B /* XCTest.framework in Frameworks */,
+				86EDAA421937A4E4000FE03B /* CoreData.framework in Frameworks */,
+				86EDAA411937A4E4000FE03B /* UIKit.framework in Frameworks */,
+				86EDAA401937A4E4000FE03B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86EDAA141937A4E4000FE03B = {
+			isa = PBXGroup;
+			children = (
+				86EDAA281937A4E4000FE03B /* LG4 */,
+				86EDAA451937A4E4000FE03B /* LG4Tests */,
+				86EDAA1F1937A4E4000FE03B /* Frameworks */,
+				86EDAA1E1937A4E4000FE03B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86EDAA1E1937A4E4000FE03B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86EDAA1D1937A4E4000FE03B /* LG4.app */,
+				86EDAA3D1937A4E4000FE03B /* LG4Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86EDAA1F1937A4E4000FE03B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86EDAA201937A4E4000FE03B /* Foundation.framework */,
+				86EDAA221937A4E4000FE03B /* CoreGraphics.framework */,
+				86EDAA241937A4E4000FE03B /* UIKit.framework */,
+				86EDAA261937A4E4000FE03B /* CoreData.framework */,
+				86EDAA3E1937A4E4000FE03B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86EDAA281937A4E4000FE03B /* LG4 */ = {
+			isa = PBXGroup;
+			children = (
+				86EDAA311937A4E4000FE03B /* WWAppDelegate.h */,
+				86EDAA321937A4E4000FE03B /* WWAppDelegate.m */,
+				86EDAA371937A4E4000FE03B /* Images.xcassets */,
+				86EDAA341937A4E4000FE03B /* LG4.xcdatamodeld */,
+				86EDAA291937A4E4000FE03B /* Supporting Files */,
+			);
+			path = LG4;
+			sourceTree = "<group>";
+		};
+		86EDAA291937A4E4000FE03B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86EDAA2A1937A4E4000FE03B /* LG4-Info.plist */,
+				86EDAA2B1937A4E4000FE03B /* InfoPlist.strings */,
+				86EDAA2E1937A4E4000FE03B /* main.m */,
+				86EDAA301937A4E4000FE03B /* LG4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86EDAA451937A4E4000FE03B /* LG4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				86EDAA4B1937A4E4000FE03B /* LG4Tests.m */,
+				86EDAA461937A4E4000FE03B /* Supporting Files */,
+			);
+			path = LG4Tests;
+			sourceTree = "<group>";
+		};
+		86EDAA461937A4E4000FE03B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86EDAA471937A4E4000FE03B /* LG4Tests-Info.plist */,
+				86EDAA481937A4E4000FE03B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86EDAA1C1937A4E4000FE03B /* LG4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86EDAA4F1937A4E4000FE03B /* Build configuration list for PBXNativeTarget "LG4" */;
+			buildPhases = (
+				86EDAA191937A4E4000FE03B /* Sources */,
+				86EDAA1A1937A4E4000FE03B /* Frameworks */,
+				86EDAA1B1937A4E4000FE03B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LG4;
+			productName = LG4;
+			productReference = 86EDAA1D1937A4E4000FE03B /* LG4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86EDAA3C1937A4E4000FE03B /* LG4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86EDAA521937A4E4000FE03B /* Build configuration list for PBXNativeTarget "LG4Tests" */;
+			buildPhases = (
+				86EDAA391937A4E4000FE03B /* Sources */,
+				86EDAA3A1937A4E4000FE03B /* Frameworks */,
+				86EDAA3B1937A4E4000FE03B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86EDAA441937A4E4000FE03B /* PBXTargetDependency */,
+			);
+			name = LG4Tests;
+			productName = LG4Tests;
+			productReference = 86EDAA3D1937A4E4000FE03B /* LG4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86EDAA151937A4E4000FE03B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = WeddingWire;
+				TargetAttributes = {
+					86EDAA3C1937A4E4000FE03B = {
+						TestTargetID = 86EDAA1C1937A4E4000FE03B;
+					};
+				};
+			};
+			buildConfigurationList = 86EDAA181937A4E4000FE03B /* Build configuration list for PBXProject "LG4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86EDAA141937A4E4000FE03B;
+			productRefGroup = 86EDAA1E1937A4E4000FE03B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86EDAA1C1937A4E4000FE03B /* LG4 */,
+				86EDAA3C1937A4E4000FE03B /* LG4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86EDAA1B1937A4E4000FE03B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDAA2D1937A4E4000FE03B /* InfoPlist.strings in Resources */,
+				86EDAA381937A4E4000FE03B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86EDAA3B1937A4E4000FE03B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDAA4A1937A4E4000FE03B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86EDAA191937A4E4000FE03B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDAA361937A4E4000FE03B /* LG4.xcdatamodeld in Sources */,
+				86EDAA331937A4E4000FE03B /* WWAppDelegate.m in Sources */,
+				86EDAA2F1937A4E4000FE03B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86EDAA391937A4E4000FE03B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDAA4C1937A4E4000FE03B /* LG4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86EDAA441937A4E4000FE03B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86EDAA1C1937A4E4000FE03B /* LG4 */;
+			targetProxy = 86EDAA431937A4E4000FE03B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86EDAA2B1937A4E4000FE03B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86EDAA2C1937A4E4000FE03B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86EDAA481937A4E4000FE03B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86EDAA491937A4E4000FE03B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86EDAA4D1937A4E4000FE03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86EDAA4E1937A4E4000FE03B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86EDAA501937A4E4000FE03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LG4/LG4-Prefix.pch";
+				INFOPLIST_FILE = "LG4/LG4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86EDAA511937A4E4000FE03B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LG4/LG4-Prefix.pch";
+				INFOPLIST_FILE = "LG4/LG4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86EDAA531937A4E4000FE03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LG4.app/LG4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LG4/LG4-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LG4Tests/LG4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		86EDAA541937A4E4000FE03B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LG4.app/LG4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LG4/LG4-Prefix.pch";
+				INFOPLIST_FILE = "LG4Tests/LG4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86EDAA181937A4E4000FE03B /* Build configuration list for PBXProject "LG4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86EDAA4D1937A4E4000FE03B /* Debug */,
+				86EDAA4E1937A4E4000FE03B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86EDAA4F1937A4E4000FE03B /* Build configuration list for PBXNativeTarget "LG4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86EDAA501937A4E4000FE03B /* Debug */,
+				86EDAA511937A4E4000FE03B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86EDAA521937A4E4000FE03B /* Build configuration list for PBXNativeTarget "LG4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86EDAA531937A4E4000FE03B /* Debug */,
+				86EDAA541937A4E4000FE03B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86EDAA341937A4E4000FE03B /* LG4.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86EDAA351937A4E4000FE03B /* LG4.xcdatamodel */,
+			);
+			currentVersion = 86EDAA351937A4E4000FE03B /* LG4.xcdatamodel */;
+			path = LG4.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 86EDAA151937A4E4000FE03B /* Project object */;
+}
