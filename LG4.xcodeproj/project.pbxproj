@@ -22,6 +22,9 @@
 		86EDAA421937A4E4000FE03B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA261937A4E4000FE03B /* CoreData.framework */; };
 		86EDAA4A1937A4E4000FE03B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86EDAA481937A4E4000FE03B /* InfoPlist.strings */; };
 		86EDAA4C1937A4E4000FE03B /* LG4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA4B1937A4E4000FE03B /* LG4Tests.m */; };
+		86EDAA561937A4F4000FE03B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EDAA551937A4F4000FE03B /* Storyboard.storyboard */; };
+		86EDAA591937A520000FE03B /* WWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA581937A520000FE03B /* WWTableViewController.m */; };
+		86EDAA5C1937A52E000FE03B /* WWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDAA5B1937A52E000FE03B /* WWTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		86EDAA471937A4E4000FE03B /* LG4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LG4Tests-Info.plist"; sourceTree = "<group>"; };
 		86EDAA491937A4E4000FE03B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86EDAA4B1937A4E4000FE03B /* LG4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LG4Tests.m; sourceTree = "<group>"; };
+		86EDAA551937A4F4000FE03B /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		86EDAA571937A520000FE03B /* WWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTableViewController.h; sourceTree = "<group>"; };
+		86EDAA581937A520000FE03B /* WWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTableViewController.m; sourceTree = "<group>"; };
+		86EDAA5A1937A52E000FE03B /* WWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTableViewCell.h; sourceTree = "<group>"; };
+		86EDAA5B1937A52E000FE03B /* WWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,11 @@
 				86EDAA371937A4E4000FE03B /* Images.xcassets */,
 				86EDAA341937A4E4000FE03B /* LG4.xcdatamodeld */,
 				86EDAA291937A4E4000FE03B /* Supporting Files */,
+				86EDAA551937A4F4000FE03B /* Storyboard.storyboard */,
+				86EDAA571937A520000FE03B /* WWTableViewController.h */,
+				86EDAA581937A520000FE03B /* WWTableViewController.m */,
+				86EDAA5A1937A52E000FE03B /* WWTableViewCell.h */,
+				86EDAA5B1937A52E000FE03B /* WWTableViewCell.m */,
 			);
 			path = LG4;
 			sourceTree = "<group>";
@@ -231,6 +244,7 @@
 			files = (
 				86EDAA2D1937A4E4000FE03B /* InfoPlist.strings in Resources */,
 				86EDAA381937A4E4000FE03B /* Images.xcassets in Resources */,
+				86EDAA561937A4F4000FE03B /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +266,8 @@
 				86EDAA361937A4E4000FE03B /* LG4.xcdatamodeld in Sources */,
 				86EDAA331937A4E4000FE03B /* WWAppDelegate.m in Sources */,
 				86EDAA2F1937A4E4000FE03B /* main.m in Sources */,
+				86EDAA591937A520000FE03B /* WWTableViewController.m in Sources */,
+				86EDAA5C1937A52E000FE03B /* WWTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
