@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862812CD195397530090226C /* WWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862812CC195397530090226C /* WWDetailViewController.m */; };
 		86EDAA211937A4E4000FE03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA201937A4E4000FE03B /* Foundation.framework */; };
 		86EDAA231937A4E4000FE03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA221937A4E4000FE03B /* CoreGraphics.framework */; };
 		86EDAA251937A4E4000FE03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA241937A4E4000FE03B /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		862812CB195397530090226C /* WWDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWDetailViewController.h; sourceTree = "<group>"; };
+		862812CC195397530090226C /* WWDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWDetailViewController.m; sourceTree = "<group>"; };
 		86EDAA1D1937A4E4000FE03B /* LG4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LG4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EDAA201937A4E4000FE03B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86EDAA221937A4E4000FE03B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +136,8 @@
 				86EDAA581937A520000FE03B /* WWTableViewController.m */,
 				86EDAA5A1937A52E000FE03B /* WWTableViewCell.h */,
 				86EDAA5B1937A52E000FE03B /* WWTableViewCell.m */,
+				862812CB195397530090226C /* WWDetailViewController.h */,
+				862812CC195397530090226C /* WWDetailViewController.m */,
 			);
 			path = LG4;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				86EDAA361937A4E4000FE03B /* LG4.xcdatamodeld in Sources */,
 				86EDAA331937A4E4000FE03B /* WWAppDelegate.m in Sources */,
 				86EDAA2F1937A4E4000FE03B /* main.m in Sources */,
+				862812CD195397530090226C /* WWDetailViewController.m in Sources */,
 				86EDAA591937A520000FE03B /* WWTableViewController.m in Sources */,
 				86EDAA5C1937A52E000FE03B /* WWTableViewCell.m in Sources */,
 			);
@@ -387,7 +393,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LG4/LG4-Prefix.pch";
 				INFOPLIST_FILE = "LG4/LG4-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,7 +408,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LG4/LG4-Prefix.pch";
 				INFOPLIST_FILE = "LG4/LG4-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -464,6 +474,7 @@
 				86EDAA511937A4E4000FE03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86EDAA521937A4E4000FE03B /* Build configuration list for PBXNativeTarget "LG4Tests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +483,7 @@
 				86EDAA541937A4E4000FE03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -8,7 +8,7 @@
 
 #import "WWTableViewController.h"
 #import "WWTableViewCell.h"
-@import AVFoundation;
+#import "WWDetailViewController.h"
 
 @interface WWTableViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -28,6 +28,9 @@
 {
     [super viewDidLoad];
     self.dataSource = @[@"first", @"second", @"third", @"fourth"];
+    
+    [self.tableView setDelegate:self];
+    [self.tableView setDataSource:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,13 +68,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *string = [self.dataSource objectAtIndex:indexPath.row];
-    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:string];
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-gb"];
-    utterance.rate = 0.0005;
-    
-    AVSpeechSynthesizer *speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-    [speechSynthesizer speakUtterance:utterance];
+    [self performSegueWithIdentifier:@"detailSegue" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"detailSegue"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *string = self.dataSource[indexPath.row];
+        
+        WWDetailViewController *viewController = (WWDetailViewController *)[segue destinationViewController];
+        viewController.text = string;
+
+    }
 }
 
 @end
