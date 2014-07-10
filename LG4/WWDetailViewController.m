@@ -27,9 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    [self.detailLabel setText:self.text];
+    [self.detailLabel setText:self.blogModel.body];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WWBlogModel.h"
 
 @interface WWDetailViewController : UIViewController
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) WWBlogModel *blogModel;
 @end

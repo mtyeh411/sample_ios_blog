@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		862812CD195397530090226C /* WWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862812CC195397530090226C /* WWDetailViewController.m */; };
+		86EBB987195CCCFD00601EA9 /* WWBlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EBB986195CCCFD00601EA9 /* WWBlogModel.m */; };
 		86EDAA211937A4E4000FE03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA201937A4E4000FE03B /* Foundation.framework */; };
 		86EDAA231937A4E4000FE03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA221937A4E4000FE03B /* CoreGraphics.framework */; };
 		86EDAA251937A4E4000FE03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDAA241937A4E4000FE03B /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		862812CB195397530090226C /* WWDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWDetailViewController.h; sourceTree = "<group>"; };
 		862812CC195397530090226C /* WWDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWDetailViewController.m; sourceTree = "<group>"; };
+		86EBB985195CCCFD00601EA9 /* WWBlogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBlogModel.h; sourceTree = "<group>"; };
+		86EBB986195CCCFD00601EA9 /* WWBlogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBlogModel.m; sourceTree = "<group>"; };
 		86EDAA1D1937A4E4000FE03B /* LG4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LG4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EDAA201937A4E4000FE03B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86EDAA221937A4E4000FE03B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				86EDAA5B1937A52E000FE03B /* WWTableViewCell.m */,
 				862812CB195397530090226C /* WWDetailViewController.h */,
 				862812CC195397530090226C /* WWDetailViewController.m */,
+				86EBB985195CCCFD00601EA9 /* WWBlogModel.h */,
+				86EBB986195CCCFD00601EA9 /* WWBlogModel.m */,
 			);
 			path = LG4;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			files = (
 				86EDAA361937A4E4000FE03B /* LG4.xcdatamodeld in Sources */,
 				86EDAA331937A4E4000FE03B /* WWAppDelegate.m in Sources */,
+				86EBB987195CCCFD00601EA9 /* WWBlogModel.m in Sources */,
 				86EDAA2F1937A4E4000FE03B /* main.m in Sources */,
 				862812CD195397530090226C /* WWDetailViewController.m in Sources */,
 				86EDAA591937A520000FE03B /* WWTableViewController.m in Sources */,

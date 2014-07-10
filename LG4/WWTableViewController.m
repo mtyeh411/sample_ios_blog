@@ -9,8 +9,9 @@
 #import "WWTableViewController.h"
 #import "WWTableViewCell.h"
 #import "WWDetailViewController.h"
+#import "WWBlogModel.h"
 
-@interface WWTableViewController ()
+@interface WWTableViewController()
 @property (nonatomic, strong) NSArray *dataSource;
 @end
 
@@ -27,10 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataSource = @[@"first", @"second", @"third", @"fourth"];
     
-    [self.tableView setDelegate:self];
-    [self.tableView setDataSource:self];
+    self.dataSource = @[[WWBlogModel fakeBlogModel]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +54,6 @@
     static NSString *CellIdent = @"cellIdentifier";
     
     WWTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdent forIndexPath:indexPath];
-    
     [self configureCell:cell atIndexPath:indexPath];
     
     return cell;
@@ -63,7 +61,19 @@
 
 - (void)configureCell:(WWTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    [cell.textLabel setText:[self.dataSource objectAtIndex:indexPath.row]];
+    WWBlogModel *blogPost = [self.dataSource objectAtIndex:indexPath.row];
+
+    [cell.textLabel setText:blogPost.title];
+    [cell.detailTextLabel setText:blogPost.author];
+    
+    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+}
+
+#pragma mark - TableView Delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 88.0f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -76,11 +86,10 @@
     if ([[segue identifier] isEqualToString:@"detailSegue"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *string = self.dataSource[indexPath.row];
+        WWBlogModel *blogPost = self.dataSource[indexPath.row];
         
-        WWDetailViewController *viewController = (WWDetailViewController *)[segue destinationViewController];
-        viewController.text = string;
-
+        WWDetailViewController *detailViewController = (WWDetailViewController *)[segue destinationViewController];
+        detailViewController.blogModel = blogPost;
     }
 }
 
